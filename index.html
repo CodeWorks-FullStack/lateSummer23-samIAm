@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<!-- NOTE make sure to add the debug class to your body to see the borders from the style tag above -->
+
+<body class="font-baloo">
+
+    <!-- SECTION navbar -->
+    <header class="container-fluid sticky-top">
+        <section class="row justify-content-center bg-green ">
+            <div class="col-12 col-md-3 text-center">
+                <h1>Sam I Am 🍳</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <!-- SECTION hero img and card -->
+        <section class="row hero-row">
+            <div class="col-md-6 p-5 d-none d-md-block">
+                <!-- SECTION hero card -->
+                <div class="hero-card">
+                    <p>I do not like them Sam I Am. TOO BAD! these are better than regular eggs and ham. Risus imperdiet
+                        fermentum ullamcorper
+                        ut tellus amet fames aliquet commodo. Id pharetra in lacus diam adipiscing mauris. Scelerisque
+                        tristique mauris dolor
+                        urna dui volutpat sem nec. Turpis massa quam ullamcorper in pellentesque aliquam lacinia
+                        integer. Cursus aenean mi massa
+                        nascetur. Dui vulputate non elementum purus ut facilisis leo scelerisque. Cursus condimentum.
+                    </p>
+                    <div class="text-end">
+                        <button class="bg-green rounded-pill p-2 text-white">Buy Eggs!</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION banner  -->
+        <section class="row bg-green">
+            <div class="col-12 text-center text-white">
+                <h2>Buy Eggs</h2>
+            </div>
+        </section>
+        <!-- SECTION shop btns -->
+        <section class="row p-5 bg-dark">
+            <div class="col-6 col-md-3 p-4">
+                <!-- SECTION shop item card -->
+                <!-- NOTE this shop-container div has position relative -->
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 p-4">
+                <div class="shop-container">
+                    <img class="rounded-top shop-img"
+                        src="https://plus.unsplash.com/premium_photo-1666620505046-4bec74fee63a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                        alt="ham">
+                    <div class="bg-eyes text-white text-center p-2 rounded-bottom w-100">
+                        <p>Ham</p>
+                    </div>
+                    <!-- NOTE the button has position absolute -->
+                    <button class="bg-green rounded-pill p-1  text-white fs-4 shop-btn">+<i
+                            class="mdi mdi-cart"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <!-- SECTION footer -->
+        <section class="row bg-eyes text-white">
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <p class="p-2">Find us on a map</p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <p class="p-2">Check out our Myspace</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

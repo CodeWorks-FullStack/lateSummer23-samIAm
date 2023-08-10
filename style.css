@@ -1,0 +1,90 @@
+/* h1 {
+    color: greenyellow;
+} */
+
+:root {
+    --green: #11D200;
+    --dark: #3F3F3F;
+    --eyes: #16161D;
+}
+
+button {
+    box-shadow: 2px 2px 6px var(--green);
+    border: none;
+}
+
+
+p {
+    margin: 0;
+}
+
+.hero-row {
+    min-height: 50vh;
+    justify-content: end;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1616174900332-1264408cf779?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* NOTE we can also apply media queries with maxium values instead of minimum */
+/* @media(max-width:768px){
+    .hero-row{
+        background-image: url('https://images.unsplash.com/photo-1616174900332-1264408cf779?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    }
+} */
+
+@media(min-width:768px) {
+
+    /* NOTE we can reference as many classes/selectors as we want w/in one media query */
+    .hero-row {
+        background-image: url('https://images.unsplash.com/photo-1593584785033-9c7604d0863f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=715&q=80');
+    }
+
+}
+
+.hero-card {
+    color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: rgba(50, 50, 50, 0.71);
+    backdrop-filter: blur(9px);
+}
+
+.shop-img {
+    height: 20vh;
+    width: 100%;
+}
+
+.shop-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-btn {
+    position: absolute;
+    top: -23px;
+}
+
+
+/* UTILS */
+
+.font-baloo {
+    font-family: 'Baloo 2', cursive;
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.bg-eyes {
+    background-color: var(--eyes);
+}
